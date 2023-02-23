@@ -1,6 +1,12 @@
 import React from 'react';
 
-export const Statistics = ({ good, normal, bad, total, positiveFeedback }) => {
+export const Statistics = ({
+  good,
+  normal,
+  bad,
+  total,
+  positivePercentage,
+}) => {
   return (
     <div>
       <h2>Stastics</h2>
@@ -18,7 +24,7 @@ export const Statistics = ({ good, normal, bad, total, positiveFeedback }) => {
           <h3>Total: {total}</h3>
         </li>
         <li>
-          <h3>Positive feedback: {positiveFeedback}%</h3>
+          <h3>Positive feedback: {positivePercentage}%</h3>
         </li>
       </ul>
     </div>
